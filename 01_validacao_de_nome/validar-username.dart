@@ -5,8 +5,12 @@ bool usernameValidation(String str) {
   RegExp(r'^[a-zA-Z]').hasMatch(str) &&
   RegExp(r'^[a-zA-Z0-9_]*$').hasMatch(str) &&
   !str.endsWith('_')) {
-    return true
+    return true;
   } else {
-    return false
+    return false;
   }
+}
+
+void main() {
+  print(usernameValidation(stdin.readLineSync()));
 }
