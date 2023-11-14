@@ -2,7 +2,7 @@ def FindIntersection(strArr):
   # Divide as strings em listas de números
   list1 = list(map(int, strArr[0].split(", ")))
   list2 = list(map(int, strArr[1].split(", ")))
-  
+
   # Inicializa uma lista para armazenar a intersecção
   intersection = []
 
@@ -22,6 +22,7 @@ def FindIntersection(strArr):
   if len(intersection) > 0:
     # Converter a lista de números em uma string
     result = ', '.join(map(str, intersection))
+    type(result)
     return result
   else:
     return 'False'
